@@ -1,0 +1,36 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Inventory</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Upc</th>
+      <th>Sku</th>
+      <th>Item Description</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Vendor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+<tbody>
+    <% @inventory_scaffolds.each do |inventory_scaffold| %>
+    <tr>
+      <td><%= inventory_scaffold.upc %></td>
+      <td><%= inventory_scaffold.sku %></td>
+      <td><%= inventory_scaffold.item_desc %></td>
+      <td><%= inventory_scaffold.unit_price %></td>
+      <td><%= inventory_scaffold.quantity %></td>
+      <td><%= inventory_scaffold.vendor %></td>
+      <td><%= link_to "Show", inventory_scaffold, class:"btn btn-secondary" %></td>
+      <td><%= link_to "Edit", @edit_inventory_scaffold_path, class:"btn btn-secondary" %></td>
+      <td><%= button_to "Delete", inventory_scaffold, method: :delete, class:"btn btn-secondary" %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<%= link_to "New inventory scaffold", new_inventory_scaffold_path, class:"btn btn-secondary"%>

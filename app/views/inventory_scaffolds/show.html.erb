@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @inventory_scaffold %>
+
+<div>
+  <%= link_to "Edit this inventory scaffold", edit_inventory_scaffold_path(@inventory_scaffold) %> |
+  <%= link_to "Back to inventory scaffolds", inventory_scaffolds_path %>
+
+  <%= button_to "Destroy this inventory scaffold", @inventory_scaffold, method: :delete %>
+</div>

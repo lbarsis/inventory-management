@@ -1,0 +1,25 @@
+<table id="<%= dom_id inventory_scaffold %>" class="table">
+  <thead>
+    <tr>
+      <th>Upc</th>
+      <th>Sku</th>
+      <th>Item Description</th>
+      <th>Unit price</th>
+      <th>Quantity</th>
+      <th>Vendor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= inventory_scaffold.upc %></td>
+      <td><%= inventory_scaffold.sku %></td>
+      <td><%= inventory_scaffold.item_desc %></td>
+      <td><%= inventory_scaffold.unit_price %></td>
+      <td><%= inventory_scaffold.quantity %></td>
+      <td><%= inventory_scaffold.vendor %></td>
+      <td><%= link_to "Show this inventory scaffold", inventory_scaffold %></td>
+    </tr>
+  </tbody>
+</table>
+

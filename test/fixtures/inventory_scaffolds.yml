@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  upc: 1
+  sku: MyString
+  item_desc: MyString
+  unit_price: 1.5
+  quantity: 1
+  vendor: MyString
+
+two:
+  upc: 1
+  sku: MyString
+  item_desc: MyString
+  unit_price: 1.5
+  quantity: 1
+  vendor: MyString
